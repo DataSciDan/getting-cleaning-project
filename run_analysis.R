@@ -28,4 +28,4 @@ all_tbl <- tbl_df(all)
 all_tbl <- all_tbl %>% group_by(subject, activity) %>% summarize_each(funs(mean))
 
 
-write.table(all_tbl, file='Tidy.txt')
+write.table(all_tbl, file='Tidy.txt', row.names=FALSE)
